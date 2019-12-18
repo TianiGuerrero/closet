@@ -17,6 +17,7 @@ public class PracticaN extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         btnactivar = new javax.swing.JButton();
         lblmensaje1 = new javax.swing.JLabel();
+        lblmensaje2 = new javax.swing.JLabel();
 
         jTextField1.setText("jTextField1");
 
@@ -33,24 +34,30 @@ public class PracticaN extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(140, Short.MAX_VALUE)
+                .addComponent(lblmensaje1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(137, 137, 137))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(156, 156, 156)
+                        .addGap(152, 152, 152)
                         .addComponent(btnactivar))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(132, 132, 132)
-                        .addComponent(lblmensaje1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(145, Short.MAX_VALUE))
+                        .addGap(112, 112, 112)
+                        .addComponent(lblmensaje2, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(213, Short.MAX_VALUE)
+                .addGap(50, 50, 50)
                 .addComponent(btnactivar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
                 .addComponent(lblmensaje1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
+                .addGap(18, 18, 18)
+                .addComponent(lblmensaje2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(82, 82, 82))
         );
 
         pack();
@@ -58,6 +65,7 @@ public class PracticaN extends javax.swing.JFrame {
 
     private void btnactivarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnactivarActionPerformed
        lblmensaje1.setText("Hola..");
+       lblmensaje2.setText("Como te va...");
     }//GEN-LAST:event_btnactivarActionPerformed
 
     /**
@@ -99,5 +107,6 @@ public class PracticaN extends javax.swing.JFrame {
     private javax.swing.JButton btnactivar;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblmensaje1;
+    private javax.swing.JLabel lblmensaje2;
     // End of variables declaration//GEN-END:variables
 }
